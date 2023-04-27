@@ -14,5 +14,7 @@ urlpatterns = [
             authentication_form=UserLoginForm,
             ),
         name='login',
+
          ),
+    path('', include('django.contrib.auth.urls')),
 ]

@@ -6,9 +6,9 @@ from django.contrib.auth.admin import UserAdmin
 
 from .forms import CustomUserCreationForm, CustomUserChangeForm
 
-@admin.register(Game)
-class GameAdmin(admin.ModelAdmin):
-    pass
+
+admin.site.register(services)
+admin.site.register(item)
 
 
 class CustomUserAdmin(UserAdmin):
